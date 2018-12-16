@@ -42,7 +42,7 @@ const createInvoice = (myDoc, user_name ,invoice_num, adress, postal_code, city,
     myDoc.font('Times-Roman').fontSize(13).text('najlepsierakety@gmail.com', 20, 200);
     myDoc.font('Times-Roman').fontSize(13).text('+421 XXX XXX XXX', 20, 230);
 
-    myDoc.font('Times-Roman').fontSize(13).text(`${order_name}`, 255, 80);
+    myDoc.font('Times-Roman').fontSize(13).text(`${user_name}`, 255, 80);
     myDoc.font('Times-Roman').fontSize(13).text(`${adress}`, 255, 110);
     myDoc.font('Times-Roman').fontSize(13).text(`${postal_code}`, 255, 140);
     myDoc.font('Times-Roman').fontSize(13).text(`${city}`, 255, 170);
@@ -72,7 +72,7 @@ const createInvoice = (myDoc, user_name ,invoice_num, adress, postal_code, city,
     myDoc.font('Times-Roman').fontSize(10).text('CENA', 414, 336);
 
     myDoc.font('Times-Roman').fontSize(10).text(`${order_name}`, 20, 356);
-    myDoc.font('Times-Roman').fontSize(10).text(`${order_num.toString()}`, 217, 356);
+    myDoc.font('Times-Roman').fontSize(10).text(`1`, 217, 356);
     myDoc.font('Times-Roman').fontSize(10).text(`${price}€`, 414, 356);
 
     myDoc.font('Times-Roman').fontSize(13).text(`Objednavka vytvorena dna ${date}.`, 10, 700)

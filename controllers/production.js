@@ -8,7 +8,7 @@ const production = (count) => {
         'kontrola kvality',
         'koniec vyroby'
     ];
-
+    
         product1 = new Promise((resolve, reject)=>{
             setTimeout(()=> {
                 resolve(productions_parts[0]);

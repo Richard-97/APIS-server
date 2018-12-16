@@ -7,10 +7,10 @@ const sendEmail = (invoice_num,email) =>{
         auth: {
           type: 'OAuth2',
           user: 'najlepsierakety@gmail.com',
-          clientId: '555774590777-49c9u688up2j5c1juhhuhltvqqc67kl5.apps.googleusercontent.com',
-          clientSecret: 'BjqeVuKJahj5QrmATFZ_IyL1',
-          refreshToken: '1/NqNZcrBcToQxIs2CUF3YZeDbZonULgG2BTZCA1ANalU',
-          accessToken: 'ya29.GlteBjsABGuNFA4oV4OKmK8S91rZjqdSrEyaHV9BQ0S2SsdNMos9yxiMwYdhxyVAAIxLTSldBoVJQhP6o51YAZ7IiMdTVVemSpwg2PVn1uU2B9juqW4FIIIt0yNh'
+          clientId: '52937241797-60eqi172bsbsvenva58neeqsoao4irf2.apps.googleusercontent.com',
+          clientSecret: '3S70Y0dDpujob7Rn9oyLezfi',
+          refreshToken: '1/wJW_ABCxm2As6OHvV2niwfV7wRCU7BbR8U5ttrXgASSpfREQhVhe0BB7lsdcv7Iz',
+          accessToken: 'ya29.GltzBoVBrSMYPXaJzbKTQmsW14kB15gO2YHlu-iZJ2d1xo2OmM5yTBeilpIH8HQrODCskQ8nYy2tMxzMPHKJoWAenupu95cSZQLgk6S7xXdZ55Hj5gtBG2FdO65G'
         },
       });
     
@@ -28,7 +28,7 @@ const sendEmail = (invoice_num,email) =>{
     
     
     transporter.sendMail(mailOption, (err, res)=>{
-        if (err) return console.log('Error with SendEmail.');
+        if (err) return console.log(err);
         console.log('Email send sucessfully.');
     })
 }
